@@ -3,8 +3,7 @@ extern crate tokio_trace;
 mod support;
 
 use self::support::*;
-use tokio_trace::subscriber::with_default;
-use tokio_trace::Level;
+use tokio_trace::{dispatcher::with_default, Level};
 
 use std::sync::{
     atomic::{AtomicUsize, Ordering},
